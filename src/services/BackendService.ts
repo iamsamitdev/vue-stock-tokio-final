@@ -20,6 +20,12 @@ BackendService.interceptors.request.use(
     }
 )
 
+// CRUD Catgory -----------------------------------
+// Read All Categories
+function getAllCategories() {
+    return BackendService.get('categories')
+}
+
 // CRUD Product -----------------------------------
 // Read All Products
 function getAllProducts(page: number, limit: number) {
